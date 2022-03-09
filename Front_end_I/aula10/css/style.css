@@ -4,9 +4,16 @@
   margin: 0;
 }
 body {
-  background: #f6f9ff;
+  background: #f3f3f3;
   height: 100vh;
   width: 100%;
+}
+.BarDiscont {
+  background: #1cd1b0;
+}
+header {
+  background-color: #00669f;
+  top: 0;
 }
 body .cards {
   display: flex;
@@ -22,12 +29,13 @@ body .cards {
   width: 500px;
   height: 750px;
   margin: 20px;
-  background-color: gray;
+  background-color: white;
   border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 .card__background {
-  background-image: url();
-  background-color: blueviolet;
+  background-position: center;
+  background-size: cover;
   width: 500px;
   height: 300px;
   border-radius: 20px 20px 0 0;
@@ -37,21 +45,28 @@ body .cards {
   height: 200px;
   border-radius: 100%;
   object-fit: cover;
-  filter: drop-shadow(0px 5px 5px black);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   margin-top: 200px;
 }
 .card__info {
-  margin-top: 120px;
+  margin: 120px 50px;
 }
-header {
+.card__description {
+  margin-top: 30px;
+}
+.card__info button {
+  margin-top: 30px;
   background-color: #00669f;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 footer {
-  position: fixed;
-  left: 0;
+  height: 30px;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: #00669f;
   color: white;
   text-align: center;
 }

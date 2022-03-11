@@ -1,8 +1,107 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: var(--title-color-light);
+}
+
+:root {
+    --base-color: #222;
+    --body-color: #f3f3f3;
+    --title-color: #fc200c;
+    --title-color-second: #39b24a;
+    --title-color-light: #fff;
+    --text-color: var(--base-color);
+}
+
 body {
-  background: #f3f3f3;
+    background: var(--body-color);
+    font: 700 1rem 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+header,
+footer {
+    background: var(--base-color);
+    position: absolute;
+    width: 100%;
+}
+footer {
+    bottom: 0;
+}
+h2 {
+    color: var(--title-color);
+}
+nav {
+    font: 400 1.187rem 'Roboto', sans-serif;
+}
+.container {
+    margin: 0 1.25rem;
+}
+
+#header {
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo > a {
+    font: 700 1.75rem 'Popping', sans-serif;
+    color: var(--title-color);
+}
+.logo > a > span:first-child {
+    color: var(--title-color-second);
+}
+.logo > a > span {
+    color: var(--title-color-light);
+}
+.menu {
+    display: flex;
+    gap: 15px;
+}
+.cards {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card {
+    background: #fff;
+    width: 30.625rem;
+    height: 21.875rem;
+    border-radius: 5px;
+    text-align: center;
+}
+.delivery {
+    background: url(../img/delivery.jpg);
+}
+.cardapio {
+    padding: 20px;
+}
+.cardapio__itens {
+    margin: 70px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+}
+.card span {
+    color: var(--title-color-light);
+}
+#footer {
+    height: 9.371rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer .menu {
+    flex-direction: column;
 }

@@ -1,3 +1,3 @@
 # CTD - Digital House
 
-Atividade referente ao segundo checkpoint da disciplina de Introdução a Informática
+Atividade referente ao Certified Tech Developer - Digital House

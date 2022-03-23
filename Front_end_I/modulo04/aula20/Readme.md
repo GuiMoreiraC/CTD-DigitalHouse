@@ -4,7 +4,7 @@
 
 Uma das principais tarefas de um desenvolvedor Front End é tanto estruturar interfaces quanto aplicar estilos a partir de um wireframe ou de uma imagem. O desafio será reconhecer os diferentes rótulos e os estilos correspondentes que podem compor o layout e o design para começar a estruturar um arquivo até obter um resultado visual semelhante à referência.
 
-Nesta oportunidade usaremos um layout no [Figma](https://https://www.figma.com/file/jWj6ekQOXZoNz2ajxzC9n4/Aula-integradora---Game-Shop?node-id=0%3A1) e o continuaremos modelando individualmente para completar o que começamos em aula.
+Nesta oportunidade usaremos um layout no [Figma](https://www.figma.com/file/jWj6ekQOXZoNz2ajxzC9n4/Aula-integradora---Game-Shop?node-id=0%3A1) e o continuaremos modelando individualmente para completar o que começamos em aula.
 
 Boa sorte!✨
 

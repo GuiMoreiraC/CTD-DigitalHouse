@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--title-color-light);
+}
+.container {
+    margin: 0 1.25rem;
+}
+
+:root {
+    --base-color: #3c2313;
+    --decoration-color: #f0a83e;
+    --decoration-color-second: #8a8787;
+    --body-color: #fff;
+    --dark-color: #222;
+    --title-color-light: #fff;
+}
+
+.ofertas {
+    height: 1.25rem;
+    background: var(--dark-color);
+}
+.ofertas .container,
+#header,
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.menu a,
+.seletor a {
+    margin-left: 1.25rem;
+}
+
+header {
+    background: var(--decoration-color);
+    position: sticky;
+    top: 0;
+}
+#header {
+    height: 3.875rem;
+    align-items: center;
+}
+.logo a span {
+    color: var(--base-color);
+}
+.menu {
+    list-style-type: none;
+}
+
+.hero {
+    background: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    height: 25rem;
+}

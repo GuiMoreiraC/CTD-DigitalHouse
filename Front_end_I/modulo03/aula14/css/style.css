@@ -28,6 +28,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .card {
     display: flex;
@@ -75,4 +76,5 @@ footer {
     background-color: #00669f;
     color: white;
     text-align: center;
+    bottom: 0;
 }

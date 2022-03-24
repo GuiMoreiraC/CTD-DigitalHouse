@@ -53,5 +53,8 @@ header {
 
 .hero {
     background: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 25rem;
 }

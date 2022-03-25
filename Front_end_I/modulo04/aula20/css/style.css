@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 a,
-h2 {
+.banner h2 {
     text-decoration: none;
     color: var(--title-color-light);
+    font: 700 1rem 'Roboto', sans-serif;
 }
 .container {
     margin: 0 1.25rem;
@@ -24,24 +26,31 @@ h2 {
 .flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 header {
     background: var(--base-color);
 }
-#header {
+.inner__header {
+    justify-content: space-between;
     height: 6.25rem;
 }
 .logo img {
     margin-right: 20px;
 }
+.logo a {
+    font: 700 1.5625rem 'Roboto', sans-serif;
+}
 .logo a span {
     color: var(--decoration-color);
+    font: 400 1.5625rem 'Roboto', sans-serif;
 }
 .menu {
     list-style-type: none;
     gap: 12px;
+}
+.menu ul li:last-child {
+    margin-left: 30px;
 }
 svg {
     width: 1.5625rem;
@@ -50,20 +59,25 @@ svg {
 
 .banner {
     height: 32rem;
-    background: url(../Imgs/banner.png);
-    background-repeat: no-repeat;
+    background: url(../Imgs/banner.png) no-repeat center;
     background-size: cover;
-    background-position: center;
     flex-direction: column;
     justify-content: center;
+    gap: 30px;
+}
+.banner h2 {
+    font-size: 2.5rem;
 }
 .banner h2::before {
     content: '25% ';
     color: var(--decoration-color);
 }
-.banner a {
+.botao {
     width: 13.75rem;
     height: 3.8125rem;
+    font: 500 1.5625rem 'Roboto', sans-serif;
     background: var(--decoration-color);
     border-radius: 5px;
+    justify-content: center;
+    align-items: center;
 }

@@ -32,7 +32,8 @@ body {
     align-items: center;
 }
 
-header {
+header,
+footer {
     background: var(--base-color);
 }
 .inner__header {
@@ -71,6 +72,7 @@ svg {
 }
 .banner h2 {
     font-size: 2.5rem;
+    text-align: center;
 }
 .banner h2::before {
     content: '25% ';
@@ -86,15 +88,17 @@ svg {
     align-items: center;
 }
 
-.produtos__destaque h2 {
+.produtos__destaque h2,
+.produtos__estrelas h2 {
     font-size: 1.875rem;
     text-align: center;
     margin: 2.5rem 0rem;
 }
 .cards {
     justify-content: center;
-    justify-content: space-evenly;
+    gap: 30px;
     align-items: center;
+    flex-wrap: wrap;
 }
 .card {
     flex-direction: column;
@@ -123,4 +127,61 @@ svg {
 .card__conteudo h5 {
     font-size: 0.625rem;
     color: var(--decoration-color-second);
+}
+.produtos__estrelas .cards {
+    gap: 120px;
+}
+.produtos__estrelas .cards div {
+    background-size: cover;
+    width: 22.5rem;
+    height: 8.4375rem;
+    border-radius: 5px;
+    color: var(--title-color-light);
+    justify-content: center;
+}
+.produtos__estrelas .cards div h3 {
+    font-size: 25px;
+}
+.card__cadeira {
+    background: url(../Imgs/banner_cadeira.png) no-repeat center;
+}
+.card__computadores {
+    background: url(../Imgs/banner_comp.png) no-repeat center;
+}
+
+.inner__footer {
+    justify-content: space-between;
+    height: 13.5rem;
+    margin-top: 85px;
+}
+.social {
+    flex-direction: column;
+    gap: 20px;
+}
+.social h2 {
+    color: var(--title-color-light);
+    font-size: 25px;
+}
+.social .menu {
+    gap: 43px;
+}
+
+@media (max-width: 480px) {
+    header .menu a {
+        display: none;
+    }
+    header .menu::after {
+        content: url(../Imgs/icons/menu.svg);
+    }
+    .banner {
+        background-position: left;
+    }
+    .produtos__estrelas .cards {
+        gap: 24px;
+    }
+    .produtos__estrelas .cards div {
+        background-size: cover;
+        width: 18rem;
+        height: 6.75rem;
+    }
 }

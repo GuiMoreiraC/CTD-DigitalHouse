@@ -48,3 +48,5 @@ A partir deste momento, desenvolveremos funções extras para nossa Calculadora,
    Exemplo: geradorDePorcentagem (2, 200) (deve retornar 1 já que 2 é 1% de 200).
 
 Parabéns, conseguimos aplicar e entender conceitos que vão nos servir ao longo de nossa carreira, agora temos que pensar em melhorias para nossa Calculadora com o conhecimento que iremos adquirir no futuro.
+
+[Documento Original](https://docs.google.com/document/d/16VgLywrINgsPkatPntaCtXC4DQYrLa12/edit#)

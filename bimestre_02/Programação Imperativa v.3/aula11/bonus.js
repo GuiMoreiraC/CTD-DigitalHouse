@@ -20,45 +20,78 @@ function pontuacaoMaior(array) {
     return maiorPontuacao;
 }
 
-function competicao(array1, array2, array3) {
+/*
+function competicao01(array1, array2, array3) {
     let maiorMedia = 0;
     let maiorEtip = 0;
-    let ParticipanteMM = '';
-    let ParticipanteME = '';
+    let parMaiorMedia = '';
+    let parEtip = '';
 
     if (maiorMedia < pontuacaoMedia(array1)) {
         maiorMedia = pontuacaoMedia(array1);
-        ParticipanteMM = 'Participante A';
+        parMaiorMedia = 'Participante A';
     }
     if (maiorMedia < pontuacaoMedia(array2)) {
         maiorMedia = pontuacaoMedia(array2);
-        ParticipanteMM = 'Participante B';
+        parMaiorMedia = 'Participante B';
     }
     if (maiorMedia < pontuacaoMedia(array3)) {
         maiorMedia = pontuacaoMedia(array3);
-        ParticipanteMM = 'Participante C';
+        parMaiorMedia = 'Participante C';
     }
 
     if (maiorEtip < pontuacaoMaior(array1)) {
         maiorEtip = pontuacaoMaior(array1);
-        ParticipanteME = 'Participante A';
+        parEtip = 'Participante A';
     }
     if (maiorEtip < pontuacaoMaior(array2)) {
         maiorEtip = pontuacaoMaior(array2);
-        ParticipanteME = 'Participante B';
+        parEtip = 'Participante B';
     }
     if (maiorEtip < pontuacaoMaior(array3)) {
         maiorEtip = pontuacaoMaior(array3);
-        ParticipanteME = 'Participante C';
+        parEtip = 'Participante C';
     }
 
     console.log(`
     Parabéns Participantes!!!
-    Vencedores por modalidades:
 
-    Melhor média: O ${ParticipanteMM} com a pontuação de : ${maiorMedia}
-    Maior e-tip: O ${ParticipanteME} com a pontuação de : ${maiorEtip}
+    Melhor média: O ${parMaiorMedia} com a pontuação : ${maiorMedia}
+    Maior e-tip: O ${parEtip} com a pontuação : ${maiorEtip}
     `);
 }
+*/
 
-console.log(competicao(ParticipanteA, ParticipanteB, ParticipanteC));
+// Nova solução usando array.
+
+function competicao02(array1, array2, array3) {
+    let parArray = [array1, array2, array3];
+    let participante = ['Participante A', 'Participante B', 'Participante C'];
+
+    let maiorMedia = 0;
+    let maiorEtip = 0;
+
+    let parMaiorMedia = '';
+    let parEtip = '';
+
+    for (let i = 0; i < parArray.length; i++) {
+        if (maiorMedia < pontuacaoMedia(parArray[i])) {
+            maiorMedia = pontuacaoMedia(parArray[i]);
+            parMaiorMedia = participante[i];
+        }
+        if (maiorEtip < pontuacaoMaior(parArray[i])) {
+            maiorEtip = pontuacaoMaior(parArray[i]);
+            parEtip = participante[i];
+        }
+    }
+
+    return `
+    Parabéns Participantes!!!
+
+    Melhor média: O ${parMaiorMedia} com a pontuação : ${maiorMedia}
+    Maior e-tip: O ${parEtip} com a pontuação : ${maiorEtip}
+    `;
+}
+
+// console.log(competicao01(ParticipanteA, ParticipanteB, ParticipanteC));
+console.log(competicao02(ParticipanteA, ParticipanteB, ParticipanteC));

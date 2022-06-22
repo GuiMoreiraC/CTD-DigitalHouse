@@ -7,6 +7,9 @@ let num = [
     [1, 2, 3, 4, 5],
 ];
 
+let num2 = [1, 2, 3, 4, 5];
+
 function name(array) {}
 
-num.map();
+let reducao = num2.reduce((previousValue, currentValue) => (previousValue = +currentValue));
+console.log(reducao);
